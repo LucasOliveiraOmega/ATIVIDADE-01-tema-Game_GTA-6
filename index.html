@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA VI - Portal Simples</title>
+
+    <link rel="icon" type="image/x-icon" href="icon/icon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#inicio">
+                <i class="bi bi-controller text-danger me-2"></i>GTA VI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cards">Recursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#plataformas">Plataformas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="bg-dark text-white text-center py-5 border-bottom border-danger border-3">
+        <div class="container py-3">
+            <h1 class="display-5 fw-bold">Grand Theft Auto VI</h1>
+            <p class="lead text-secondary mb-4">De volta a Vice City e ao estado de Leonida no novo jogo da Rockstar Games.</p>
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalCard1">
+                Saiba Mais
+            </button>
+        </div>
+    </header>
+
+    <main id="cards" class="container my-5">
+        <h2 class="text-center fw-bold mb-4">Destaques do Jogo</h2>
+
+        <div class="row g-4">
+            
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <span class="badge bg-danger mb-2">Mapa</span>
+                        <h5 class="card-title fw-bold">Vice City & Leonida</h5>
+                        <p class="card-text text-muted">O maior mapa da série, com praias ensolaradas, pântanos e centros urbanos cheios de vida.</p>
+                        <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalCard1">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">Personagens</span>
+                        <h5 class="card-title fw-bold">Lucia & Jason</h5>
+                        <p class="card-text text-muted">Uma dupla de criminosos inspirada em Bonnie e Clyde em uma campanha cooperativa intensa.</p>
+                        <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalCard2">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Tecnologia</span>
+                        <h5 class="card-title fw-bold">Motor RAGE 9</h5>
+                        <p class="card-text text-muted">Gráficos de última geração com física da água hiper-realista e iluminação Ray Tracing.</p>
+                        <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalCard3">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark mb-2">Fauna</span>
+                        <h5 class="card-title fw-bold">Vida Selvagem</h5>
+                        <p class="card-text text-muted">Ecossistema vivo com jacarés, flamingos e animais aquáticos espalhados pelos pântanos.</p>
+                        <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalCard4">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <span class="badge bg-info text-dark mb-2">Mecânica</span>
+                        <h5 class="card-title fw-bold">Redes Sociais</h5>
+                        <p class="card-text text-muted">Sistema integrado de vídeos curtos gravados pelos NPCs que reagem às suas ações no jogo.</p>
+                        <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalCard5">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <span class="badge bg-dark mb-2">Garagem</span>
+                        <h5 class="card-title fw-bold">Veículos & Barcos</h5>
+                        <p class="card-text text-muted">Grande variedade de supercarros, aviões, lanchas esportivas e opções de personalização.</p>
+                        <button class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalCard6">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <section id="plataformas" class="bg-white py-4 border-top">
+        <div class="container text-center">
+            <h4 class="fw-bold mb-3">Lançamento e Plataformas</h4>
+            <div class="row g-3 justify-content-center">
+                <div class="col-md-4">
+                    <div class="p-3 bg-light rounded border">
+                        <strong>Previsão:</strong> 2025 / 2026
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 bg-light rounded border">
+                        <strong>Plataformas:</strong> PlayStation 5 & Xbox Series X|S
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="modalCard1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Vice City & Estado de Leonida</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O estado de Leonida é a maior e mais ambiciosa recriação de mundo aberto da Rockstar Games. Inspirado na Flórida (EUA), o cenário combina áreas metropolitanas vibrantes com regiões pantanosas densas, sem telas de carregamento.</p>
+                    <ul class="list-group list-group-flush small">
+                        <li class="list-group-item"><strong>Vice Beach:</strong> Praias extensas com centenas de banhistas, hotéis art-déco e vida noturna agitada.</li>
+                        <li class="list-group-item"><strong>Kelly County & Pântanos:</strong> Vastas áreas alagadas, manguezais e vegetação subtropical densa.</li>
+                        <li class="list-group-item"><strong>Port Gellhorn:</strong> Grande polo industrial com galpões, refinarias e docas marítimas.</li>
+                        <li class="list-group-item"><strong>Interiores Acessíveis:</strong> Centenas de lojas, bares, clubes e edifícios totalmente exploráveis.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalCard2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Lucia & Jason - Protagonistas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>A campanha foca na trajetória de Lucia e Jason, uma dupla de criminosos que une forças para sobreviver e ascender no submundo perigoso de Vice City, com forte inspiração na lenda de Bonnie e Clyde.</p>
+                    <ul class="list-group list-group-flush small">
+                        <li class="list-group-item"><strong>Lucia Caminos:</strong> Primeira protagonista feminina da era 3D de GTA, iniciando sua jornada em liberdade condicional.</li>
+                        <li class="list-group-item"><strong>Troca Dinâmica:</strong> Alternância imediata entre os dois personagens durante missões ou exploração livre.</li>
+                        <li class="list-group-item"><strong>Assaltos Coordenados:</strong> Mecânica tática para render testemunhas, arrombar cofres e planejar rotas de fuga.</li>
+                        <li class="list-group-item"><strong>Inventário Físico:</strong> Armamento pesado guardado e gerenciado diretamente no porta-malas do carro.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalCard3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Motor Gráfico RAGE 9</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Construído especificamente para o hardware do PlayStation 5 e Xbox Series X|S, o motor RAGE 9 entrega avanços gráficos incomparáveis na renderização de mundos abertos.</p>
+                    <ul class="list-group list-group-flush small">
+                        <li class="list-group-item"><strong>Ray Tracing Completo:</strong> Reflexos e iluminação global em tempo real nas poças de chuva, vidros e espelhos.</li>
+                        <li class="list-group-item"><strong>Física dos Fluidos:</strong> Ondulações marítimas, correntes oceânicas e efeitos de marés calculados fisicamente.</li>
+                        <li class="list-group-item"><strong>Clima Extremo:</strong> Tempestades tropicais dinâmicas que alteram a aderência dos pneus e o controle de barcos.</li>
+                        <li class="list-group-item"><strong>IA Comportamental:</strong> Pedestres com rotinas diárias individuais, horários de trabalho e reações naturais a crimes.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalCard4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Vida Selvagem & Ecossistema</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Leonida conta com uma fauna viva e autônoma, herdando e aprimorando o renomado ecossistema dinâmico de Red Dead Redemption 2 para um cenário contemporâneo.</p>
+                    <ul class="list-group list-group-flush small">
+                        <li class="list-group-item"><strong>Invasões Urbanas:</strong> Crocodilos e répteis que invadem quintais, piscinas residenciais e rodovias movimentadas.</li>
+                        <li class="list-group-item"><strong>Vida Marinha Rica:</strong> Tubarões em alto-mar, arraias, peixes tropicais e golfinhos acompanhando lanchas.</li>
+                        <li class="list-group-item"><strong>Aves e Pântanos:</strong> Bandos de flamingos e garças que reagem a barulhos de motores e disparos.</li>
+                        <li class="list-group-item"><strong>Atividades ao Ar Livre:</strong> Pesca costeira e esportiva em diferentes pontos de rios e mar aberto.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalCard5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Redes Sociais & Celular</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O universo de GTA VI satiriza a sociedade conectada moderna. O smartphone dos protagonistas possui uma plataforma de vídeos curtos que reflete o que acontece no mundo do jogo.</p>
+                    <ul class="list-group list-group-flush small">
+                        <li class="list-group-item"><strong>Feed Viral:</strong> Pedestres filmam perseguições policiais, festas na praia e batidas de carro para a rede social.</li>
+                        <li class="list-group-item"><strong>Repercussão das Ações:</strong> Seus crimes e fugas épicas podem se tornar os maiores virais da internet in-game.</li>
+                        <li class="list-group-item"><strong>Transmissões em Direto:</strong> Acesso a câmeras públicas, transmissões da polícia e eventos secretos de corrida.</li>
+                        <li class="list-group-item"><strong>Paródia de Tendências:</strong> Memes, influenciadores fictícios e notícias que reagem às decisões da campanha.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalCard6" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Veículos, Barcos & Personalização</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Uma imensa frota de veículos automotores e náuticos com a física de direção mais detalhada da franquia, acompanhada por um sistema aprofundado de customização.</p>
+                    <ul class="list-group list-group-flush small">
+                        <li class="list-group-item"><strong>Supercarros & Clássicos:</strong> Esportivos de alta performance e muscle cars icônicos dos anos 80 remodelados.</li>
+                        <li class="list-group-item"><strong>Veículos Aquáticos:</strong> Lanchas velozes, iates de grande porte com cabines decoradas e aerobarcos de pântano.</li>
+                        <li class="list-group-item"><strong>Tuning Completo:</strong> Modificação de motor, suspensão esportiva, kits de carroceria, pintura e sistemas de som.</li>
+                        <li class="list-group-item"><strong>Interiores Funcionais:</strong> Painéis analógicos e digitais iluminados, espelhos com reflexos reais e direção precisa.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <div class="container">
+                <p class="mb-1">Nome: Lucas Silva de Oliveira</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
